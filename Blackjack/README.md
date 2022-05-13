@@ -1,4 +1,4 @@
 # Blackjack
 Console program: text-based blackjack
 
-<image src="Blackjack/Screenshot.png">
+<image src="Screenshot.png">
