@@ -182,6 +182,8 @@ int opponentMove(){
 	printf("\nOpponent hand: ");
 	printMaskedHand(oHandSize);
 
+
+	opponentScore = scoreHand(opponentHand, oHandSize);
 	if(opponentScore > 21){
 		printf("Opponent busted! You Win.\n\n");
 		printBothRevealedHands();
@@ -256,8 +258,6 @@ void blackjack(){
 		if(!opponentStay)
 			if(opponentMove() != CONTINUE)
 				return;
-
-	printBothRevealedHands();/**/
 	}
 
 	/*win/loss conditions*/
